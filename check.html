@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+select{
+   position: absolute;left: 372px;top: 25px;
+}
+</style>
+</head>
+<body>
+<div style="width: 600px;margin: 0 auto" id="div-form">
+   <form name="url" action="./scan/check.php" method="post">
+      <div class="layui-form-item" style="width: 80%;">
+         <div class="layui-input-block">
+            <div class="layui-unselect layui-form-select" style="display:inline-block;">
+               <div class="layui-select-title"></div>
+            </div>
+            <select name="way" style="display:inline-block;font-family: 微软雅黑;font-size: 14px;">
+            <option value="指纹识别+存活子域名检测">指纹识别+存活子域名检测</option>
+            <option value="存活子域名检测">存活子域名检测</option>
+            <option value="web指纹识别">web指纹识别</option>
+            </select>
+            <input id="input1" style="display:inline-block;color:rgb(153,153,153);font-family: 微软雅黑;font-size: 14px;" type="text" name="url" lay-verify="required" required='required' placeholder="请输入url" class="layui-input">
+            
+      <input type="submit" class="layui-btn" style="font-size:14px" value="运行">
+      
+   </form>
+</div>
+</body>
+</html>

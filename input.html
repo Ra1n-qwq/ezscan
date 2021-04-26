@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+select{
+   position: absolute;left: 372px;top: 25px;
+}
+</style>
+</head>
+<body>
+<div style="width: 600px;margin: 0 auto" id="div-form">
+   <form name="url" action="./scan/port.php" method="post">
+      <div class="layui-form-item" style="width: 80%;">
+         <div class="layui-input-block">
+            <div class="layui-unselect layui-form-select" style="display:inline-block;">
+               <div class="layui-select-title"></div>
+            </div>
+            <!-- <select name="way" style="display:inline-block;font-family: 微软雅黑;font-size: 14px;">
+            <option value="全面检测">全面检测</option>
+            <option value="单一检测">单一检测</option>
+            </select> -->
+            <input id="input1" style="display:inline-block;color:rgb(153,153,153);font-family: 微软雅黑;font-size: 14px;" type="text" name="url" lay-verify="required" required='required' placeholder="请输入ip地址" class="layui-input">
+            <input id="input2" style="display:inline-block;color:rgb(153,153,153);font-family: 微软雅黑;font-size: 14px;" type="text" name="port" lay-verify="required" required='required' placeholder="请输入端口"οnkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="layui-input">
+      <input type="submit" class="layui-btn" style="font-size:14px" value="运行">
+      
+   </form>
+</div>
+</body>
+</html>
